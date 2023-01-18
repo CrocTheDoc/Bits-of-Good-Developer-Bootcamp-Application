@@ -1,0 +1,93 @@
+body {
+  background-color: #05386B;
+}
+
+#stage {
+    margin-left: 200px;
+    margin-top: 75px;
+    width: 382px;
+    height: 292px;
+    
+  }
+
+#stage a {
+    position: absolute;
+    object-position: 150px 150px;
+  }
+#stage a img {
+    padding: 10px;
+    background: #EDF5E1;
+  }
+
+#stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+#stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+#stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.mySlides {
+    border-radius: 8px;
+    
+}
+
+#header {
+    position: absolute;
+    top: 7%;
+    right: 21%;
+    font-family: 'Courier New', Courier, monospace;
+    color:#EDF5E1;
+}
+
+#information {
+  position: absolute;
+  top: 17%;
+  right: 17%;
+  left: 47%;
+  font-family: 'Courier New', Courier, monospace;
+  color:#EDF5E1;
+}
+
+#instagram {
+  color:#EDF5E1;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  right: 23%;
+  
+}
+
+#linkedIn {
+  color:#EDF5E1;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  right: 16%;
+  bottom: 25%;
+}
+
+@keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
